@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> -->
+    <title>Password-Generator</title>
+  <script type="module" crossorigin src="/assets/index-BXU-vWW1.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Dg6gr-h7.css">
+</head>
+<body>
+    <div class="bg-custom-black w-screen h-screen flex justify-center items-center">
+        <div class="flex flex-col max-w-xl ">
+            <!-- Heading -->
+            <h1 class="text-slate-300 text-center mb-3 text-xl leading-snug font-semibold tracking-wide">Password Generator</h1>
+
+            <!-- Passowrd Generated Section -->
+            <div class="flex justify-between items-center bg-custom-black-light rounded-sm">
+
+                <input type="text" class="bg-custom-black-light border-none p-2 w-full text-2xl text-green-500" placeholder="Password" readonly data-password-display>
+
+                <button class="relative bg-transparent cursor-pointer mr-1.5 copy-btn" data-copy-btn>
+                    <p class="absolute -top-6 left-1/2 transform -translate-x-1/2 text-slate-300 opacity-0 transition-opacity duration-300" 
+                    data-copy-msg></p>
+                    <img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20width='96px'%20height='96px'%20viewBox='0%200%2024%2024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%3e%3ctitle%3ecopy_2_line%3c/title%3e%3cg%20id='页面-1'%20stroke='none'%20stroke-width='1'%20fill='none'%20fill-rule='evenodd'%3e%3cg%20id='File'%20transform='translate(-96.000000,%20-288.000000)'%3e%3cg%20id='copy_2_line'%20transform='translate(96.000000,%20288.000000)'%3e%3cpath%20d='M24,0%20L24,24%20L0,24%20L0,0%20L24,0%20Z%20M12.5934901,23.257841%20L12.5819402,23.2595131%20L12.5108777,23.2950439%20L12.4918791,23.2987469%20L12.4918791,23.2987469%20L12.4767152,23.2950439%20L12.4056548,23.2595131%20C12.3958229,23.2563662%2012.3870493,23.2590235%2012.3821421,23.2649074%20L12.3780323,23.275831%20L12.360941,23.7031097%20L12.3658947,23.7234994%20L12.3769048,23.7357139%20L12.4804777,23.8096931%20L12.4953491,23.8136134%20L12.4953491,23.8136134%20L12.5071152,23.8096931%20L12.6106902,23.7357139%20L12.6232938,23.7196733%20L12.6232938,23.7196733%20L12.6266527,23.7031097%20L12.609561,23.275831%20C12.6075724,23.2657013%2012.6010112,23.2592993%2012.5934901,23.257841%20L12.5934901,23.257841%20Z%20M12.8583906,23.1452862%20L12.8445485,23.1473072%20L12.6598443,23.2396597%20L12.6498822,23.2499052%20L12.6498822,23.2499052%20L12.6471943,23.2611114%20L12.6650943,23.6906389%20L12.6699349,23.7034178%20L12.6699349,23.7034178%20L12.678386,23.7104931%20L12.8793402,23.8032389%20C12.8914285,23.8068999%2012.9022333,23.8029875%2012.9078286,23.7952264%20L12.9118235,23.7811639%20L12.8776777,23.1665331%20C12.8752882,23.1545897%2012.8674102,23.1470016%2012.8583906,23.1452862%20L12.8583906,23.1452862%20Z%20M12.1430473,23.1473072%20C12.1332178,23.1423925%2012.1221763,23.1452606%2012.1156365,23.1525954%20L12.1099173,23.1665331%20L12.0757714,23.7811639%20C12.0751323,23.7926639%2012.0828099,23.8018602%2012.0926481,23.8045676%20L12.108256,23.8032389%20L12.3092106,23.7104931%20L12.3186497,23.7024347%20L12.3186497,23.7024347%20L12.3225043,23.6906389%20L12.340401,23.2611114%20L12.337245,23.2485176%20L12.337245,23.2485176%20L12.3277531,23.2396597%20L12.1430473,23.1473072%20Z'%20id='MingCute'%20fill-rule='nonzero'%3e%3c/path%3e%3cpath%20d='M9,2%20C7.89543,2%207,2.89543%207,4%20L7,6%20L9,6%20L9,4%20L20,4%20L20,15%20L18,15%20L18,17%20L20,17%20C21.1046,17%2022,16.1046%2022,15%20L22,4%20C22,2.89543%2021.1046,2%2020,2%20L9,2%20Z%20M4,7%20C2.89543,7%202,7.89543%202,9%20L2,20%20C2,21.1046%202.89543,22%204,22%20L15,22%20C16.1046,22%2017,21.1046%2017,20%20L17,9%20C17,7.89543%2016.1046,7%2015,7%20L4,7%20Z%20M4,9%20L15,9%20L15,20%20L4,20%20L4,9%20Z'%20id='形状'%20fill='%236CF9F2FF'%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="copy" class="w-5 h-5 bg-transparent copy-img">
+                </button>
+            </div>
+
+            <!--Password Criteria-->
+            <div class="bg-custom-black-light mt-3 flex flex-col w-full rounded-sm">
+
+                <!--Passowrd length section-->
+                <div class="flex justify-between m-2 ">
+                    <p class="text-gray-300">Password length</p>
+                    <p data-length-display class="text-gray-300">0</p>
+                </div>
+
+                <!--slider-->
+                <input type="range" min="1" max="20" step="1" id="slider" class="slider mx-auto w-[93%] h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer range-fill"  data-length-slider>
+
+                <!--Checkboxess container-->
+                <div class="p-3">
+                    <!--First box-->
+                    <div class="flex items-center mb-[0.09rem] mt-2">
+                        <input type="checkbox" id="uppercasePG" class="mr-2">
+                        <label for="uppercasePG" class="text-gray-300">Include UpperCase Letters</label>
+                    </div>
+
+                    <!--Second-->
+                    <div class="flex items-center mb-[0.09rem]">
+                        <input type="checkbox" id="lowercasePG" class="mr-2">
+                        <label for="lowercasePG" class="text-gray-300 ">Include LowerCase Letters</label>
+                    </div>
+
+                    <!--third-->
+                    <div class="flex items-center mb-[0.09rem]">
+                        <input type="checkbox" id="numbercasePG" class="mr-2">
+                        <label for="numbercasePG" class="text-gray-300">Include Numbers</label>
+                    </div>
+
+                    <!--fourth-->
+                    <div class="flex items-center mb-[0.09rem]">
+                        <input type="checkbox" id="specialcasePG" class="mr-2">
+                        <label for="specialcasePG" class="text-gray-300">Include Special Characters</label>
+                    </div>
+                </div>
+
+                <!--Strength section-->
+                <div class="bg-gray-950 m-3 flex flex-row justify-between p-3 rounded-sm">
+                    <p class="text-gray-500">Strength</p>
+                    <div class="flex gap-1 text-gray-300 items-center">
+
+                        <!-- None-->
+                        <div class="flex gap-1 items-center none-password">
+                            <p class="">None</p> 
+                            <div class="w-1 h-4  bg-gray-400"></div>
+                            <div class="w-1 h-4  bg-gray-400"></div>
+                            <div class="w-1 h-4  bg-gray-400"></div>
+                            <div class="w-1 h-4 border border-white"></div> 
+
+                        </div>
+
+                        <!--Weak Password-->
+                        <div class="flex gap-1 items-center hidden easy-password">
+                            <p class="">Easy</p> 
+                            <div class="w-1 h-4  bg-green-400"></div>
+                            <div class="w-1 h-4  bg-green-400"></div>
+                            <div class="w-1 h-4  bg-green-400"></div>
+                            <div class="w-1 h-4 border border-white"></div> 
+
+                        </div>
+
+
+                        <!-- Medium password-->
+                        <div class="flex gap-1 items-center hidden medium-password">
+                            <p class="">MEDIUM</p> 
+                            <div class="w-1 h-4  bg-yellow-300"></div>
+                            <div class="w-1 h-4  bg-yellow-300"></div>
+                            <div class="w-1 h-4  bg-yellow-300"></div>
+                            <div class="w-1 h-4 border border-white"></div> 
+
+                        </div>
+
+                        <!--Hard Password-->
+                        <div class="flex gap-1 items-center hidden hard-password">
+                            <p class="">HARD</p> 
+                            <div class="w-1 h-4  bg-red-700"></div>
+                            <div class="w-1 h-4  bg-red-700"></div>
+                            <div class="w-1 h-4  bg-red-700"></div>
+                            <div class="w-1 h-4 border border-white"></div> 
+
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+                <!--Generator-->
+                <button class="p-1.5 bg-green-500 m-3 rounded-sm hover:bg-green-600 transition-all" id="generateButton">
+                    GENERATE 🡢</p>
+                </button>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
