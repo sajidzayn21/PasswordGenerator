@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Slider track */
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 1.2rem;
+    border-radius: 1.6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(
+        to right,
+        rgb(22, 163, 74) 0%, /* green-600 color */
+        rgb(22, 163, 74) var(--slider-percentage),
+        #d1d5db var(--slider-percentage), /* gray-300 color */
+        #d1d5db 100%
+    );
+    position: relative;
+    z-index: 1;
+}
+
+/* Thumb */
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.2rem; /* Updated width */
+    height: 1.2rem; /* Updated height */
+    border-radius: 50%;
+    background: #d1d5db; /* gray-300 color */
+    cursor: pointer;
+    transition: all 100ms ease-in;
+    position: relative;
+    z-index: 10;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    outline: 1px solid #d1d5db; /* gray-300 color */
+    background-color: #9ca3af; /* Adjusted hover color if needed */
+}
+
+.slider::-moz-range-thumb {
+    appearance: none;
+    width: 1.2rem; /* Updated width */
+    height: 1.2rem; /* Updated height */
+    border-radius: 50%;
+    background: #d1d5db; /* gray-300 color */
+    cursor: pointer;
+    transition: all 100ms ease-in;
+    position: relative;
+    z-index: 10;
+}
+
+.slider::-moz-range-thumb:hover {
+    outline: 1px solid #d1d5db; /* gray-300 color */
+    background-color: #9ca3af; /* Adjusted hover color if needed */
+}
+
+
+/* check box styling */
+input[type="checkbox"] {
+    /* Hide the default checkbox */
+    appearance: none;
+    background-color: #f1f5f9; /* Tailwind's bg-gray-100 */
+    border: 2px solid #d1d5db; /* Tailwind's border-slate-300 */
+    border-radius: 0.25rem; /* Tailwind's rounded */
+    width: 0.9rem; /* Adjusted size for smaller checkbox */
+    height: 0.9rem; /* Adjusted size for smaller checkbox */
+    position: relative;
+    cursor: pointer;
+  }
+
+  /* Style when checkbox is checked */
+  input[type="checkbox"]:checked {
+    background-color: #0af19c; /* Tailwind's bg-green-500 */
+    border-color: #24e39d; /* Tailwind's bg-green-500 */
+  }
+
+  /* Add checkmark when checkbox is checked */
+  input[type="checkbox"]:checked::before {
+    content: 'L';
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem; /* Tailwind's text-sm, adjust size if needed */
+    color: #111827; /* Tailwind's bg-gray-950 */
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(-1) rotate(-42deg);
+    /* Center the checkmark and apply rotation */
+  }
+
+  /* Style for disabled checkboxes */
+  input[type="checkbox"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
